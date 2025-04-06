@@ -430,20 +430,6 @@ nav.scroll.active {
         </section>
     </div>
 
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const scrollNav = document.querySelector('nav.scroll');
-            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-            if (scrollPosition > 10) { // Adjust scroll threshold as needed
-                scrollNav.classList.add('active');
-            } else {
-                scrollNav.classList.remove('active');
-            }
-        });
-    </script>
-
 </body>
 
 </html>

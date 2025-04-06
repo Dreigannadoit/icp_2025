@@ -1,5 +1,16 @@
 import { portfolio_template_backend } from "../../declarations/portfolio_template_backend";
 
+window.addEventListener('scroll', function () {
+    const scrollNav = document.querySelector('nav.scroll');
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollPosition > 10) { // Adjust scroll threshold as needed
+        scrollNav.classList.add('active');
+    } else {
+        scrollNav.classList.remove('active');
+    }
+});
+
 document.addEventListener("DOMContentLoaded", async () => {
     // --- Load Visit Count ---
     try {
